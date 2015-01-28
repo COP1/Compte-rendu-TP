@@ -1,1 +1,23 @@
 coucou j'aime les cours de SI6
+Contexte : Nous disposons d'un dépôt hébergé par GitHub.
+Objectif : Récupérer une copie du dépôt et travailler dessus en local. 
+
+Travailler sur un projet déjà hébergé chez github
+
+1. Tout d'abord il faut disposer d'un dépôt chez github, on doit créer une organisation puis y ajouter un nouveau repository, c'est dans ce dossier que nous ajouterons le compte rendu.
+
+2. Il faut utiliser le système d'exploitation Linux, ouvrir un terminal puis entrer comme commande : git init «nom du fichier ». Cette commande sers à identifier le dossier ou github va venir chercher le fichier pour le déposer dans notre repository.
+
+3. Ensuite, on tape le chemin d’accès : cd /chemin, par exemple  cd /home/etudiants/documents/ compte rendu tp. Cette commande sers à se placer dans un dossier, ici dans les documents plus précisément dans le compte rendu tp.
+
+4. Maintenant il faut cloner le fichier pour pouvoir y travailler en local : git clone[URL du site], cela va permettre de cloner le fichier, de le télécharger sur notre disque dur pour pouvoir y travailler en local.
+
+5. Ensuite il faut taper : git commit -m "commentaires" ( les commentaires sont obligatoires lors de cette instruction). Cette commande sers de validation pour le contenu du programme.Suite à cela il faut taper les 2 lignes suivantes : 
+
+a) git config user.name"YourName"
+b) git config user.email"YourEmail"
+
+6.  Puis taper : git remote add origin + https://github.com/COP1/Compte-rendu-TP.git (l'URL de votre dépôt).
+
+7. Pour finir il faut entrer : git push -u origin master, cela va permettre de pousser votre projet vers le dépôt GitHub.
+
